@@ -207,3 +207,77 @@ body.light .actions button {
     text-decoration: line-through;
     color: gray;
 }
+
+@media (max-width: 992px) {
+  .container {
+    width: 80%;
+    padding: 25px;
+  }
+  .task-input {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .task-input input[type="text"],
+  .task-input input[type="datetime-local"],
+  .task-input button {
+    flex: unset;
+    width: 100%;
+  }
+  .task-input button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  .theme-toggle {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  .task-input input[type="text"],
+  .task-input input[type="datetime-local"] {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .task-input button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+  .task-details strong {
+    font-size: 0.9rem;
+  }
+  .task-details small {
+    font-size: 0.7rem;
+  }
+  .actions button {
+    font-size: 16px;
+  }
+}
